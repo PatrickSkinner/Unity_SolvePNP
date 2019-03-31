@@ -90,12 +90,6 @@ internal static class OpenCVInterop
     internal static extern int Init();
 
     [DllImport("OCVmatch")]
-    internal static extern int Close();
-
-    [DllImport("OCVmatch")]
-    internal static extern int GrabImage(ref byte[] image, ref int width, ref int height);
-
-    [DllImport("OCVmatch")]
     internal static extern void ComputePNP(ref Vector3[] op, ref Vector2[] ip, ref float[] rv, ref float[] tv);
 }
 
