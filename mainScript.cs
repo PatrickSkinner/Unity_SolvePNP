@@ -73,7 +73,7 @@ public class mainScript : MonoBehaviour
                 Debug.Log(transformationMatrix.ToString());
 
                 ground.transform.position = transformationMatrix.MultiplyPoint3x4(ground.transform.position);
-                ground.transform.rotation *= Quaternion.LookRotation(transformationMatrix.GetColumn(2), transformationMatrix.GetColumn(1));
+                ground.transform.rotation *= Quaternion.LookRotation(transformationMatrix.GetColumn(2), -transformationMatrix.GetColumn(1));
 
                 ground.GetComponent<MeshRenderer>().enabled = true;
 
