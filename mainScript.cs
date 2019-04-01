@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 using UnityEngine;
 using Vuforia;
 
-public class input : MonoBehaviour
+public class mainScript : MonoBehaviour
 {
     Vector2[] points = new Vector2[4];
     int i = 0;
