@@ -38,7 +38,7 @@ public class mainScript : MonoBehaviour
             else if (i == 4)
             {
 	    	// Let the user select points in clockwise order from top left, rather than the natural order of vertices in a quad
-	    	Vector2[] reorderedPoints = { points[3], points[1], points[2], points[0] };
+	    	Vector2[] reorderedPoints = { points[3], points[2], points[0], points[1] };
                 points = reorderedPoints;
 	    
                 Vector3[] vertices = new Vector3[4];
