@@ -69,7 +69,7 @@ public class mainScript : MonoBehaviour
 
                 transformationMatrix[3, 3] = 1;
 
-				//Convert from OpenCV to Unity coordinates
+		//Convert from OpenCV to Unity coordinates
                 Matrix4x4 invertYM = Matrix4x4.TRS(Vector3.zero, Quaternion.identity, new Vector3(1, -1, 1));
                 
                 transformationMatrix = transformationMatrix * invertYM;
