@@ -17,7 +17,7 @@ using namespace std;
 
 extern "C" int __declspec(dllexport) __stdcall  Init()
 {
-	// Open console for DLL debugging
+	// Open console for DLL debugging, this only works on Windows
 	FILE * pConsole;
 	AllocConsole();
 	freopen_s(&pConsole, "CONOUT$", "wb", stdout);
